@@ -1,0 +1,19 @@
+{
+  "name": "examples",
+  "version": "0.0.0",
+  "authors": [
+    "Simon Wex <simon@simonwex.com>"
+  ],
+  "license": "MPLv2",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1"
+  }
+}

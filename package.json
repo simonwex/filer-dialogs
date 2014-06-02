@@ -1,0 +1,36 @@
+{
+  "name": "filer-dialogs",
+  "description": "A set of web-native dialogs for selecting files and directories",
+  "keywords": [
+    "fs",
+    "file",
+    "filer",
+    "browser"
+  ],
+  "version": "0.0.0",
+  "author": "Simon Wex <simon@simonwex.com>",
+  "bugs": "https://github.com/simonwex/filer-dialogs/issues",
+  "license": "MPLv2",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/bower install",
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simonwex/filer-dialogs.git"
+  },
+  "dependencies": {
+    "bower": "~1.0.0",
+    "request": "^2.36.0",
+    "filer": "0.0.9"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^2.1.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-rework": "0.0.6",
+    "browserify": "^4.1.6"
+  },
+  "main": "./src/index.js"
+}
