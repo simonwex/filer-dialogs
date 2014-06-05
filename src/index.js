@@ -2,6 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+var FileSystem = require('filer').FileSystem;
 
 module.exports = {
   // Function definition borrowed from https://github.com/adobe/brackets/blob/master/src/filesystem/FileSystem.js#L619
@@ -23,12 +24,12 @@ module.exports = {
    *                          open dialog, the error will be falsy and the file/directory array will
    *                          be empty.
    */
-  showOpenDialog: function(allowMultipleSelection,
-                           chooseDirectories,
-                           title,
-                           initialPath,
-                           fileTypes,
-                           callback) {
+  showOpenDialog: function(allowMultipleSelection, chooseDirectories, title, initialPath, fileTypes, callback) {
+    var fileSystem = new FileSystem();
 
+    fileSystem.readdir('.', function(error, files) {
+      if (error) { throw error; }
+      console.log(files);
+    })
   }
 }

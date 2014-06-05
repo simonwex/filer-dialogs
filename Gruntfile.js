@@ -2,6 +2,12 @@ module.exports = function(grunt) {
   grunt.initConfig({
     clean: ['dist/'],
     browserify: {
+      options: {
+        bundleOptions: {
+          standalone: "FilerDialog"
+        }
+      },
+
       'dist/filer-dialogs.js': ['src/index.js']
     },
     rework: {
